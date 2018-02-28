@@ -112,6 +112,7 @@ Custom property | Description | Default
 			<paper-input id="paperInput"
 						 disabled$="[[disabled]]"
 						 readonly$="[[readonly]]"
+						 no-label-float="[[noLabelFloat]]"
 						 label="[[label]]"
 						 on-keyup="_findItems"
 						 value="{{_inputValue}}"
@@ -228,6 +229,14 @@ Custom property | Description | Default
 					* True, to add additional items.
 					*/
 					additionalItems: {
+						type: Boolean,
+						value: false
+					},
+
+					/**
+					* True, to hide label floating.
+					*/
+					noLabelFloat: {
 						type: Boolean,
 						value: false
 					},
