@@ -99,6 +99,11 @@ Custom property | Description | Default
 			paper-chip {
 				@apply --paper-chip-close-label;
 			}
+
+			#slot2{
+				@apply --layout-horizontal;
+				@apply --layout-wrap;
+			}
 		</style>
 
 		<iron-a11y-keys target="[[_paperInputElement]]" keys="enter" on-keys-pressed="_onKeyEnter"></iron-a11y-keys>

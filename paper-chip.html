@@ -46,6 +46,8 @@ Custom property | Description | Default
 				margin-bottom: 5px;
 				margin-right: 5px;
 				@apply --paper-chip;
+
+				@apply --layout-horizontal;
 			}
 
 			.chip:active {
@@ -85,6 +87,8 @@ Custom property | Description | Default
 			iron-icon {
 				--iron-icon-height: 16px;
 				--iron-icon-width: 16px;
+				padding: 2px;
+				box-sizing: border-box;
 				position: relative;
 				right: 8px;
 				color: var(--paper-chip-close-icon-color, #E0E0E0);
